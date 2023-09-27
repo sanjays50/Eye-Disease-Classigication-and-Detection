@@ -8,7 +8,10 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.utils import load_img, img_to_array
 
 app = Flask(__name__)
-model = load_model('final_model.h5')
+from tensorflow.keras.layers import Layer
+
+
+model = load_model('models/final_model.h5')
 # model =  load_model('enmodel_keras.h5')
 target_img = os.path.join(os.getcwd() , 'static/images')
 
