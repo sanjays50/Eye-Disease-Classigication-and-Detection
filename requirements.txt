@@ -28,7 +28,7 @@ oauthlib==3.2.2
 opt-einsum==3.3.0
 packaging==23.1
 pandas
-Pillow==10.0.1
+Pillow==9.5.0
 pilo==0.6.2
 pipreqs==0.4.13
 protobuf==4.24.3
