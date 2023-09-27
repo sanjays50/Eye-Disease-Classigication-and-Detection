@@ -33,7 +33,6 @@ pilo
 pipreqs
 protobuf
 pyasn1
-pyasn1-module
 python-dateutil
 pytz
 requests
