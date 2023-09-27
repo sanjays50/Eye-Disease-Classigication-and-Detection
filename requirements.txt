@@ -3,3 +3,4 @@ Gunicorn
 Tensorflow
 Pandas
 Numpy
+Pillow
