@@ -3,4 +3,6 @@ Gunicorn
 Tensorflow
 Pandas
 Numpy
-Pillow
+pillow
+PIL
+pillo
