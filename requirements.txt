@@ -23,7 +23,7 @@ keras
 libclang==16.0.6
 Markdown==3.4.4
 MarkupSafe==2.1.3
-numpy==1.24.3
+numpy
 oauthlib==3.2.2
 opt-einsum==3.3.0
 packaging==23.1
