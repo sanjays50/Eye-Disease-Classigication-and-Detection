@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personle Portfolio Website</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <!-- <link rel="stylesheet" href="C://play_proj//templates//styles.css"> -->
+    <link rel="stylesheet" href='/static/styles.css' />
+    <link ... href="{{ url_for('static', filename='styles.css') }}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="hero">
+        <nav>
+            <img src="/static/eye.gif" class="logo">
+        </nav>
+        <div class="detel">
+            <h1>EYE Disease 
+                <span> Detection</span></h1>
+            <p>Introduction. Early ocular disease detection 
+                <br>is an economic and effective way to prevent 
+                <br>blindness caused by diabetes, glaucoma, cataract, 
+                <br>age-related macular degeneration (AMD),
+                <br> and many other diseases</p>
+                <br> 
+                {% if readImg == '1' %}
+                <p style="color:orange; margin-top: 20px; font-size: 35px;">Diagnosis is : "{{diseases}}"</p>
+                <br>
+                <h4 style="color:orange; margin-top: 20px; font-size: 35px;">Probabilities : {{prob}}</h4>
+                <br>
+                <h4 style="color:rgb(255, 4, 0); margin-top: 0px; font-size: 20px; margin-left: 241px;">
+                    Cataract <span style="color: blue;">|</span> Diab. Ret. <span style="color: blue;">|</span> Glaucomma <span style="color: blue;">|</span> Normal </h4>
+
+                {% endif %}
+
+                <!-- <button type = "submit" form = "subf" formaction="/predict" class="btn btn-success" value="Predict" action = "/predict" method = 'POST'> -->
+        </div>
+
+
+        <div class="images" style="display: flex;">
+            <div class="container" style="  margin-left: 30%;">
+                <div class="img-area" data-img="">
+                    <i class='bx bxs-cloud-upload icon'></i>
+                    {% if readImg == '1' %}
+                    <img class='newImg' src="{{ user_image }}" alt="User Image" class="img-thumbnail" style="width:300px;height:300px;">
+                    {% endif %}
+                    <h3>Upload Image</h3>
+                    <p>Image size must be less than <span>2MB</span></p>
+                </div>
+                <!-- <button type = "button" form = "subf" name="file" class="select-image">Select Image</button> -->
+                <button class="select-image">
+                    Select Image
+        </button>
+        <center><form  id = "subf" class="form-inline" action = "/" method = "post" enctype="multipart/form-data" >
+            <!-- <button class="select-image" name = "file">Select Image</button> -->
+            <input  name="filename" type="file" id="file" accept="image/*" hidden>
+            <button class="select-image" style="margin-top: 20px; background-color: rgb(55, 55, 55);">
+            <input type = "submit" class="btn btn-success " value="Predict" hidden> 
+            Predict
+            </button>
+        </form>
+    </center>
+            </div>
+            
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
