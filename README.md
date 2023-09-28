@@ -5,7 +5,7 @@
 
 
 ## Deployment
-- For Live Demo visit
+- For Live Demo visit.
 
 [https://eyemedicore.onrender.com/](https://eyemedicore.onrender.com/)
 ## Installation
