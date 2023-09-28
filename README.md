@@ -66,7 +66,7 @@ You may also see any lint errors in the console.
 
 **Frontend:** Python, Flask , HTML.
 
-**backend:** Computer Vision, Tensorflow, Keras, Jupyter Notebook.
+**Backend:** Computer Vision, Tensorflow, Keras, Jupyter Notebook.
 
 
 
